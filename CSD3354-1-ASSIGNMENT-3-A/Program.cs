@@ -42,7 +42,7 @@ namespace BankAccount
             {
                 throw new ArgumentOutOfRangeException("amount");
             }
-            m_balance += amount;
+            m_balance -= amount;
         }
         public void Credit(double amount)
         {
